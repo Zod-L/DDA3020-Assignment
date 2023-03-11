@@ -91,14 +91,14 @@ Therefore, in total, there are 4 hyperparamters: $\lambda$, $\sigma$, $\gamma$ a
 In order to avoid overfitting, instead of simly using all features, I only select several features for price prediction. In this report, only part of analysis plots will be shown. To see all plots, please refer to code.ipynb. Features that has an obvious linear relaionship with the price will be chosen. Specifically, features rm, age, dis and lstat are chosen. As is shown in the following plot, these features have strong relationship with price.
 
 <div align=center>
-<img src=/home/liyi/DDA3020-Assignment/Assignment1/im/age.png width="80%">
+<img src=im/age.png width="80%">
 <br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 1: Relationship between age and medv</div>
 </div><br><br>
 
 <div align=center>
-<img src=/home/liyi/DDA3020-Assignment/Assignment1/im/dis.png width="80%">
+<img src=im/dis.png width="80%">
 <br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 2: Relationship between dis and medv</div>
@@ -106,7 +106,7 @@ In order to avoid overfitting, instead of simly using all features, I only selec
 
 
 <div align=center>
-<img src=/home/liyi/DDA3020-Assignment/Assignment1/im/lstat.png width="80%">
+<img src=im/lstat.png width="80%">
 <br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 3: Relationship between lstat and medv</div>
@@ -115,7 +115,7 @@ In order to avoid overfitting, instead of simly using all features, I only selec
 
 
 <div align=center>
-<img src=/home/liyi/DDA3020-Assignment/Assignment1/im/lstat.png width="80%">
+<img src=im/lstat.png width="80%">
 <br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 4: Relationship between rm and medv</div>
@@ -124,7 +124,7 @@ As is shown in the heatmap, these features are not depenednt on each other. None
 
 
 <div align=center>
-<img src=/home/liyi/DDA3020-Assignment/Assignment1/im/heatmap.png width="80%">
+<img src=im/heatmap.png width="80%">
 <br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 5:Heatmap</div>
@@ -135,7 +135,7 @@ However, there exists a weak correlation between some pairs, as is shown in rele
 
 
 <div align=center>
-<img src=/home/liyi/DDA3020-Assignment/Assignment1/im/age-dis.png width="80%">
+<img src=im/age-dis.png width="80%">
 <br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 6:Relation between age and dis</div>
@@ -143,7 +143,7 @@ However, there exists a weak correlation between some pairs, as is shown in rele
 
 
 <div align=center>
-<img src=/home/liyi/DDA3020-Assignment/Assignment1/im/rm-lstat.png width="80%">
+<img src=im/rm-lstat.png width="80%">
 <br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 7:Relation between rm and lstat</div>
@@ -173,14 +173,14 @@ In 10 experiments, the training is terminated at around 170 to 200 iterations. T
 
 
 <div align=center>
-<img src=/home/liyi/DDA3020-Assignment/Assignment1/im/exp1.png width="80%">
+<img src=im/exp1.png width="80%">
 <br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 8:Loss over iteration at experiment1</div>
 </div><br><br>
 
 <div align=center>
-<img src=/home/liyi/DDA3020-Assignment/Assignment1/im/exp10.png width="80%">
+<img src=im/exp10.png width="80%">
 <br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 9:Loss over iteration at experiment10</div>
