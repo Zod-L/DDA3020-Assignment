@@ -1,17 +1,12 @@
 # Report-Assignment2
 ## Overview
-In this assignment, I implement two classification algorithms:
-- Decision Tree
-- Multilayer Perceptron(MLP) neural network 
-
-using sklearn. Penguins classification and Fashion-MNIST image classification tasks are solved.
+In this assignment, I implement two classification algorithms:Decision Tree and Multilayer Perceptron(MLP) neural network using sklearn. Penguins classification and Fashion-MNIST image classification tasks are solved.
 
 ## Penguins Classification With Decision Tree
 ### Data Cleaning and Analysis
 In this task, penguins are classified to different type. I try different decision-tree-based algorithms for this task. I explore basis decision tree, bagging of tree and random forest algorithms. Before training the model, data is first cleaned. Those data with incomplete features are removed from the training and testing set. After cleaning the data, 333 of the 344 samples are left. These data is then splitted into training and testing set. 75% of the 333 samples are used for training while the rest 25% are used for testing. The relation between penguin types and different attributes are shown in the following histogram
 <div align=center>
-<img src=im/island.png width="80%">
-<br>
+<img src=im/island.png width="70%">
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 1: Histogram of number of penguins of different type with different islands</div>
 </div><br><br>
@@ -20,7 +15,6 @@ In this task, penguins are classified to different type. I try different decisio
 
 <div align=center>
 <img src=im/bill_length.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 2: Histogram of number of penguins of different type with different bill length, in mm</div>
 </div><br><br>
@@ -29,7 +23,6 @@ In this task, penguins are classified to different type. I try different decisio
 
 <div align=center>
 <img src=im/bill_depth.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 3: Histogram of number of penguins of different type with different bill depth, in mm</div>
 </div><br><br>
@@ -37,7 +30,6 @@ In this task, penguins are classified to different type. I try different decisio
 
 <div align=center>
 <img src=im/flipper.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 4: Histogram of number of penguins of different type with different flipper length, in mm</div>
 </div><br><br>
@@ -45,7 +37,6 @@ In this task, penguins are classified to different type. I try different decisio
 
 <div align=center>
 <img src=im/mass.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 5: Histogram of number of penguins of different type with different body mass, in g</div>
 </div><br><br>
@@ -53,7 +44,6 @@ In this task, penguins are classified to different type. I try different decisio
 
 <div align=center>
 <img src=im/sex.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 6: Histogram of number of penguins of different type with different sex</div>
 </div><br><br>
@@ -75,9 +65,11 @@ Basis decision tree algorithm is applied to the task, with only one tree bulit. 
 | no limit |      25       |   0.056   |  0.036   |
 
 The tree structures are shown in figure 7 to figure 15.
+<br>
+<br>
+<br>
 <div align=center>
 <img src=im/31.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 7: Tree structure of max depth 3, leaf size 1</div>
 </div><br><br>
@@ -86,7 +78,6 @@ The tree structures are shown in figure 7 to figure 15.
 
 <div align=center>
 <img src=im/35.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 8: Tree structure of max depth 3, leaf size 5</div>
 </div><br><br>
@@ -94,7 +85,6 @@ The tree structures are shown in figure 7 to figure 15.
 
 <div align=center>
 <img src=im/325.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 9: Tree structure of max depth 3, leaf size 25</div>
 </div><br><br>
@@ -102,7 +92,6 @@ The tree structures are shown in figure 7 to figure 15.
 
 <div align=center>
 <img src=im/51.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 10: Tree structure of max depth 5, leaf size 1</div>
 </div><br><br>
@@ -110,7 +99,6 @@ The tree structures are shown in figure 7 to figure 15.
 
 <div align=center>
 <img src=im/55.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 11: Tree structure of max depth 5, leaf size 5</div>
 </div><br><br>
@@ -118,7 +106,6 @@ The tree structures are shown in figure 7 to figure 15.
 
 <div align=center>
 <img src=im/525.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 12: Tree structure of max depth 5, leaf size 25</div>
 </div><br><br>
@@ -127,7 +114,6 @@ The tree structures are shown in figure 7 to figure 15.
 
 <div align=center>
 <img src=im/no1.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 13: Tree structure without limiting depth, leaf size 1</div>
 </div><br><br>
@@ -135,7 +121,6 @@ The tree structures are shown in figure 7 to figure 15.
 
 <div align=center>
 <img src=im/no5.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 14: Tree structure without limiting depth, leaf size 5</div>
 </div><br><br>
@@ -143,10 +128,9 @@ The tree structures are shown in figure 7 to figure 15.
 
 <div align=center>
 <img src=im/no25.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 15: Tree structure without limiting depth, leaf size 25</div>
-</div><br><br>
+</div>
 
 As is shown in the above figure, bill, flliper and body mass information are frequently used, while sex and island information are seldom appear as a split criteria, which is aligned with the observation on data histogram.
 
@@ -184,9 +168,11 @@ Compared with Bagging of Trees Algorithm, in Random Forests, not only multiple t
 
 When the number of available attribute is very small, both training and testing has a bad performance. When the number of available attribute is medium, its training error is a little bit higher than using the full set of attributes, but the tesing error is close, since it has both smaller bias and variance. As is shown in figure 16 and 17, as the number of tree increase, bias has a sharp impulse and then back to normal, while variance is decreasing.
 
+<br>
+<br>
+<br>
 <div align=center>
 <img src=im/bias.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 16: Change of bias with increasing number of tree</div>
 </div><br><br>
@@ -194,7 +180,6 @@ When the number of available attribute is very small, both training and testing 
 
 <div align=center>
 <img src=im/variance.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 17: Change of variance with increasing number of tree</div>
 </div><br><br>
@@ -241,14 +226,12 @@ For different optimizers, as is shown from figure 16 to figure 33, Adam optimize
 
 <div align=center>
 <img src=im/sgd1x50.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 18: MLP with 1 hidden layers, each with 50 neurons, optimized by sgd optimizer </div>
 </div><br><br>
 
 <div align=center>
 <img src=im/adam1x50.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 19: MLP with 1 hidden layers, each with 50 neurons, optimized by adam optimizer </div>
 </div><br><br>
@@ -256,132 +239,116 @@ For different optimizers, as is shown from figure 16 to figure 33, Adam optimize
 
 <div align=center>
 <img src=im/sgd1x200.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 20: MLP with 1 hidden layers, each with 200 neurons, optimized by sgd optimizer </div>
-</div><br><br>
+</div>
 
 
 <div align=center>
 <img src=im/adam1x200.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 21: MLP with 1 hidden layers, each with 200 neurons, optimized by adam optimizer </div>
-</div><br><br>
+</div><br>
 
 
 <div align=center>
 <img src=im/sgd1x784.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 22: MLP with 1 hidden layers, each with 784 neurons, optimized by sgd optimizer </div>
-</div><br><br>
+</div>
 
 
 <div align=center>
 <img src=im/adam1x784.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 23: MLP with 1 hidden layers, each with 784 neurons, optimized by adam optimizer </div>
-</div><br><br>
+</div><br>
 
 
 <div align=center>
 <img src=im/sgd2x50.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 24: MLP with 2 hidden layers, each with 50 neurons, optimized by sgd optimizer </div>
-</div><br><br>
+</div>
 
 
 <div align=center>
 <img src=im/adam2x50.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 25: MLP with 2 hidden layers, each with 50 neurons, optimized by adam optimizer </div>
-</div><br><br>
+</div><br>
 
 
 
 <div align=center>
 <img src=im/sgd2x200.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 26: MLP with 2 hidden layers, each with 200 neurons, optimized by sgd optimizer </div>
-</div><br><br>
+</div>
 
 
 <div align=center>
 <img src=im/adam2x200.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 27: MLP with 2 hidden layers, each with 200 neurons, optimized by adam optimizer </div>
-</div><br><br>
+</div><br>
 
 
 
 <div align=center>
 <img src=im/sgd2x784.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 28: MLP with 2 hidden layers, each with 784 neurons, optimized by sgd optimizer </div>
-</div><br><br>
+</div>
 
 
 <div align=center>
 <img src=im/adam2x784.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 29: MLP with 2 hidden layers, each with 784 neurons, optimized by adam optimizer </div>
-</div><br><br>
+</div><br>
 
 
 
 <div align=center>
 <img src=im/sgd3x50.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 30: MLP with 3 hidden layers, each with 50 neurons, optimized by sgd optimizer </div>
-</div><br><br>
+</div>
 
 
 
 <div align=center>
 <img src=im/adam3x50.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 31: MLP with 3 hidden layers, each with 50 neurons, optimized by adam optimizer </div>
-</div><br><br>
+</div><br>
 
 
 
 <div align=center>
 <img src=im/sgd3x200.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 32: MLP with 3 hidden layers, each with 200 neurons, optimized by sgd optimizer </div>
-</div><br><br>
+</div>
 
 
 <div align=center>
 <img src=im/adam3x200.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 33: MLP with 3 hidden layers, each with 200 neurons, optimized by adam optimizer </div>
-</div><br><br>
+</div><br>
 
 
 <div align=center>
 <img src=im/sgd3x784.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 34: MLP with 3 hidden layers, each with 784 neurons, optimized by sgd optimizer </div>
-</div><br><br>
+</div>
 
 
 <div align=center>
 <img src=im/adam3x784.png width="80%">
-<br>
 <div style="color:orange; border-bottom: 1px solid #d9d9d9;
      display: inline-block; color: #999; padding: 2px;">Figure 35: MLP with 3 hidden layers, each with 784 neurons, optimized by adam optimizer </div>
 </div><br><br>
